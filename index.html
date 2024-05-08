@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="./source.js" defer></script>
+    <title>My Library</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header">
+        <div class="left">
+          <div class="welcome">
+            <h3>Welcome,</h3>
+            Massimo
+          </div>
+          <span>Total Books:</span>
+          <span>Percentage of Books Read: <span class="perc-read">98%</span></span>
+        </div>
+        <div class="right">
+                <dialog id="add-dialog">
+                    <div class="modal">
+                        <p>ADD A NEW BOOK</p>
+                        <form action="" method="dialog" id="add-book-form">
+                            <div class="form-group">
+                                <label for="author">AUTHOR</label>
+                                <input type="text" id="author" name="author" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="title">TITLE</label>
+                                <input type="text" id="title" name="title" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="year-published">YEAR PUBLISHED</label>
+                                <input type="text" id="year-published" name="year-published" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="num-pages">NUMBER OF PAGES</label>
+                                <input type="text" id="num-pages" name="num-pages" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="was-read">WAS READ</label>
+                                <select name="was-read" id="was-read">
+                                    <option value="false">No</option>
+                                    <option value="true">Yes</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for=recommended">RECOMMENDED</label>
+                                <select name="recommended" id="recommended">
+                                    <option value="false">No</option>
+                                    <option value="true">Yes</option>
+                                </select>
+                            </div>
+                        </form>
+                        <div class="add-cancel-btns">
+                            <button value="cancel" formmethod="dialog" id="cancel">Cancel</button>
+                            <input form="add-book-form" type="submit" id="add-book" value="Add Book">
+                        </div>
+                    </div>
+                </dialog>
+                <button id="show-dialog">Add Book</button>
+        </div>
+      </div>
+      <div class="content">
+        <h3>My Library</h3>
+        <div class="card-grid">
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+          <div class="card">
+            <h4>Title</h4>
+            <span>Author</span>
+            <span>190 Pages</span>
+            <span>Was <span class="was-read">read</span></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
