@@ -1,5 +1,6 @@
 :root {
-    --grey: #393a39
+    --grey: #393a39;
+    --navy: #003049;
 }
 
 * {
@@ -26,7 +27,7 @@ body {
 .header {
     display: flex;
     flex-direction: row;
-    background-color: #003049;
+    background-color: var(--navy);
     justify-content: space-between;
     align-items: center;
     padding-left: 50px;
@@ -38,6 +39,10 @@ body {
     flex-direction: row;
     gap: 2rem;
     align-items: center;
+}
+
+.left span:last-child {
+    min-width: 150px
 }
 
 .right {
@@ -141,6 +146,7 @@ dialog {
 .content > h3,
 .card-grid {
     padding-left: 50px;
+    color: var(--navy);
 }
 
 .content > h3 {
@@ -166,5 +172,32 @@ dialog {
     padding: 0.5rem 1rem;
     border: 1px solid white;
     border-radius: 10px;
-    color: var(--grey);
+    color: var(--navy);
+}
+
+.card-top-row {
+    display: flex;
+    flex: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.remove-book {
+    background-color: inherit;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.remove-icon {
+    /* ensure svg will never be the target of mouse event */
+    pointer-events: none;
+}
+.toggle-read {
+    border: 1px solid transparent;
+    border-radius: 5px;
+    background-color:var(--navy);
+    color: white;
+    height: 30px;
+    margin-top: 5px;
 }
